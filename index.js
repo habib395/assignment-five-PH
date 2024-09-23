@@ -17,7 +17,7 @@ document.getElementById('donate-one-btn').addEventListener('click', function(){
         document.getElementById('donation-one-money').innerText = totalDonationMoney
         document.getElementById('donate-one-input').value= ''
         my_modal_1.showModal()
-        const titleHeading = document.getElementById('title-heading').innerText
+        const titleHeading = document.getElementById('title-one-heading').innerText
         const div = document.createElement('div')
         div.innerHTML = `<div class="card bg-base-100 w-11/12 border mx-auto my-4">
             <div class="card-body">
@@ -43,7 +43,7 @@ document.getElementById('donate-two-btn').addEventListener("click", function(){
         document.getElementById('donation-two-money').innerText = totalDonationMoney
         document.getElementById('donate-two-input').value= ''
         my_modal_1.showModal()
-        const titleHeading = document.getElementById('title-heading').innerText
+        const titleHeading = document.getElementById('title-two-heading').innerText
         const div = document.createElement('div')
         div.innerHTML = `<div class="card bg-base-100 w-11/12 border mx-auto my-4">
             <div class="card-body">
@@ -69,7 +69,7 @@ document.getElementById('donate-three-btn').addEventListener("click", function()
         document.getElementById('donation-three-money').innerText = totalDonationMoney
         document.getElementById('donate-three-input').value= ''
         my_modal_1.showModal()
-        const titleHeading = document.getElementById('title-heading').innerText
+        const titleHeading = document.getElementById('title-three-heading').innerText
         const div = document.createElement('div')
         div.innerHTML = `<div class="card bg-base-100 w-11/12 border mx-auto my-4">
             <div class="card-body">
