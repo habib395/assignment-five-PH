@@ -30,10 +30,11 @@
                     <div class="navbar w-11/12 mx-auto">
                         <div class="navbar-start">
                             <button id="blog-btn" class="btn bg-[#B4F461]">Blog</button> 
+                            <button id="home-btn" class="btn bg-[#B4F461] hidden">Home</button> 
                         </div>
                         <div class="navbar-center flex gap-2">
                           <img src="images/logo.png" alt="logo for donate money for Mankind">
-                          <p class="text-xl font-semibold">Donate Bangladesh</p>
+                          <p class="hidden md:block text-xl font-semibold">Donate Bangladesh</p>
                         </div>
                         <div class="navbar-end">
                             <img src="images/coin.png" alt="">
@@ -61,9 +62,9 @@
              <!-- card number one -->
              <div class="container mx-auto md:card sm:flex card-side w-11/12 bg-base-100 border p-6 rounded-lg ">
               <figure class="md:w-1/2">
-                <img src="images/noakhali.png" alt="">
+                <img class="h-full object-cover rounded-lg" src="images/noakhali.png" alt="">
               </figure>
-              <div class="card-body md:w-1/2 pt-0  pb-0">
+              <div class="card-body md:w-1/2 sm:pt-0  pb-0">
                   <div>
                       <div class="btn">
                           <img src="images/coin.png" alt="">
@@ -95,7 +96,7 @@
             <!-- card Number Two -->
             <div class="md:card sm:flex card-side w-11/12 bg-base-100 border p-6 rounded-lg m-auto mt-6">
               <figure class="md:w-1/2">
-                <img src="images/feni.png" alt="">
+                <img class="h-full object-cover rounded-lg" src="images/feni.png" alt="">
               </figure>
               <div class="card-body md:w-1/2 pt-0  pb-0">
                   <div>
@@ -115,7 +116,7 @@
             <!-- card number three -->
             <div class="md:card sm:flex card-side w-11/12 bg-base-100 border p-6 rounded-lg m-auto mt-6 mb-10">
               <figure class="md:w-1/2">
-                <img src="images/quota-protest.png" alt="">
+                <img class="h-full object-cover rounded-lg" src="images/quota-protest.png" alt="">
               </figure>
               <div class="card-body md:w-1/2 pt-0  pb-0">
                   <div>
@@ -141,6 +142,5 @@
       </section>
        <script src="common.js"></script>
     <script src="index.js"></script> 
-    <script src="toggle.js"></script>
   </body>
 </html>

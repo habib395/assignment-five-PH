@@ -2,6 +2,9 @@
 document.getElementById('blog-btn').addEventListener('click', function(){
     window.location.href = 'blog.html'
 })
+document.getElementById('home-btn').addEventListener('click', function(){
+    window.location.href = 'index.html'
+})
 
 document.getElementById('donate-one-btn').addEventListener('click', function(){
     const availableBalanceBtn = parseFloat(document.getElementById('available-balance-btn').innerText)
@@ -79,4 +82,24 @@ document.getElementById('donate-three-btn').addEventListener("click", function()
         alert('Invalid Donation Amount')
         document.getElementById('donation-amount').value= ''
     }
+})
+
+//for history button
+document.getElementById('history-head-btn').addEventListener('click', function(){
+    const historySection = document.getElementById('history-section-main')
+    historySection.classList.remove('hidden')
+    const donateSection = document.getElementById('donate-section-main')
+    donateSection.classList.add('hidden')
+    document.getElementById('history-head-btn').classList.add('bg-[#B4F461]')
+    document.getElementById('donation-head-btn').classList.remove('bg-[#B4F461]')
+})
+
+//for donate button
+document.getElementById('donation-head-btn').addEventListener("click", function(){
+    const historySection = document.getElementById('history-section-main')
+    historySection.classList.add('hidden')
+    const donateSection = document.getElementById('donate-section-main')
+    donateSection.classList.remove('hidden')
+    document.getElementById('donation-head-btn').classList.add('bg-[#B4F461]')
+    document.getElementById('history-head-btn').classList.remove('bg-[#B4F461]')
 })
